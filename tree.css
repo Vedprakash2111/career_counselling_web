@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+  body {
+      background:white;
+      font-family: sans-serif;
+    }
+
+    section{
+      padding-top: 85px;
+    }
+    
+
+.after10th img{
+  padding: 0;
+  height: 785px;
+}
+.after10th h1{
+  margin: 0;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family:sans-serif;
+    
+}
+

@@ -1,0 +1,52 @@
+
+body::-webkit-scrollbar{
+  display: none;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, rgba(106, 106, 106, 0.5)50%,rgba(149, 149, 149, 0.5)50%), url(./img/indexback.jpeg);
+    background-position: center;
+    background-size:auto;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    line-height: 2.2rem;
+    
+  }
+
+
+  section{
+    padding-top: 85px;
+  }
+
+  
+  .content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    left: 0;
+    top: 0;
+    padding: 3px 12px;
+    margin: 0;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 90px;
+    padding-top: 60px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 4%;
+    letter-spacing: 3px;
+}
+
+.content span{
+    color: darkslategray;
+    font-size: 65px
+}

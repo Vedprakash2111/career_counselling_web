@@ -1,0 +1,45 @@
+
+body::-webkit-scrollbar{
+    display: none;
+    }
+  body {
+      background: url(./img/background.png); 
+      background-position: center;
+      background-size:auto;
+      background-attachment: fixed;
+      font-family: sans-serif;
+      line-height: 2.2rem;
+      font: size 0.770rem;
+    }
+
+    section{
+      padding-top:85px;
+    }
+
+    .image-box-1{
+      margin-top:40px ;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    .image-box-2{
+      margin-top:40px ;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+    .img{
+      margin: 10px;
+      height: 300px;  
+      padding: 20px;
+      border: solid white;
+    }
+  .h1{
+    text-align: center;
+    color: white;
+  }
+  .h3{
+    padding-left: 40px;
+    color: white;
+  }
+  hr{
+    color: rgb(196, 191, 191);
+  }

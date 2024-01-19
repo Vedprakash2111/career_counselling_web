@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+
+   <div class="header">
+    <div id="navbar-container"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    // Use jQuery to load the navbar content dynamically
+    $(document).ready(function() {
+      $('#navbar-container').load('navbar.html');
+    });
+  </script>
+<script src="index.js"></script>
+
+
+
+   <section>
+    <div class="content">
+      <h1>Career</h1>
+        <h1><span class="span1">Counselling</span></h1> 
+        <h1>For Future</h1>
+       
+      <p class="par">Watch your thoughts, they turn into words. Watch your words, they turn into actions. Watch your actions, they turn into habits. Watch your habits, they turn into character.</p>
+  </div>
+   </section>
+
+  </body>
+</html>

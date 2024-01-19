@@ -1,0 +1,39 @@
+
+body::-webkit-scrollbar{
+    display: none;
+    }
+  body {
+      margin: 0;
+      padding: 0;
+      background: url(./img/background.png); 
+      background-position: center;
+      background-size:auto;
+      background-attachment: fixed;
+      font-family: sans-serif;
+      line-height: 2.2rem;
+      font: size 0.770rem;
+    }
+    section{
+      padding-top: 85px;
+    }
+    
+    .quiz-container ul{
+      margin-left: 20px;
+      padding-left:20px ;
+      text-transform:uppercase;
+      color:white;
+      font-size: x-large;
+    }
+    .quiz-container h2{
+      margin-left: 20px;
+      margin-right: 20px;
+      padding:20px ;
+      border: solid white;
+      border-radius: 15px;
+      color:white;
+      font-size: xx-large;
+    }
+
+
+    
+

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="service.css" />
+  </head>
+  <body>
+   
+    <div class="header">
+      <div id="navbar-container"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      // Use jQuery to load the navbar content dynamically
+      $(document).ready(function() {
+        $('#navbar-container').load('navbar.html');
+      });
+    </script>
+  <script src="index.js"></script>
+
+
+      <section>
+
+        <div>
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+            <h2 id="question">1.WHAT ARE YOUR FAVOURITE SUBJECT AND AREA OF STUDY ?</h2>
+            <ul>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">a. MATHS</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="b" id="a_text">b.BIOLOGY</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">c.POLITICIAN</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">d.BANKING</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer">
+              <label for="a" id="a_text">e.ARTIFICIAL</label>
+              </li>
+              <li>
+                  <input type="radio" name="answer" id="a" class="answer">
+                  <label for="a" id="a_text">f.BIOLOGY STREAM </label>
+              </li>
+              <li>
+                  <input type="radio" name="answer" id="a" class="answer">
+                  <label for="a" id="a_text">g.SPORTS</label>
+                  </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+  
+  
+        <div>
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+            <h2 id="question">2.WHAT ARE YOUR CAREER GOALS ?</h2>
+            <ul>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">a.PROFESSINAL STUDIES</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="b" id="a_text">b.BUILD YOUR NETWORK</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">c.INTERNSHIP </label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">d.WORK ON YOUR INTREST</label>
+            </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+  
+  
+        <div>
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+            <h2 id="question">3.WHERE DO YOU SEE YOURSELF IN THE FUTURE ?</h2>
+            <ul>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">a.ENGINEER </label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="b" id="a_text">b.DOCTOR</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">c.CHARTED ACCOUNTANT</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">GOVERNMENT JOB</label>
+            </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+  
+  
+        <div>
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+            <h2 id="question">4.WHAT ARE YOUR FUTURE PLAN IN STUDY ?</h2>
+            <ul>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">a .ENGINNERING</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="b" id="a_text">b.MMBS</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">c.CA</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">d.LAW</label>
+            </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+  
+  
+        <div>
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+            <h2 id="question">5.WHAT DO YOU FIND MOST SUCCESS EMBITION ?</h2>
+            <ul>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">a.BUSSINESS </label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="b" id="a_text">b.PROFESSIONAL ENGINEER</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">c.TEACHER</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">d.BEST JOB </label>
+            </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+  
+  
+  
+      <div>
+        <div class="quiz-container" id="quiz">
+          <div class="quiz-header">
+          <h2 id="question"> 6.IN WHICH FIELD YOU AND YOUR GARDIANS SEE FUTURE ?</h2>
+          <ul>
+          <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">a.JOB</label>
+          </li>
+          <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="b" id="a_text">b.MEDICAL</label>
+          </li>
+          <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">c.DEFENCE</label>
+          </li>
+          <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">d.STUDIES</label>
+          </li>
+          </ul>
+          </div>
+          </div>
+      </div>
+  
+  
+      <div>
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+            <h2 id="question">7.HOW YOU CHOOSE BEST OPTION FOR THEIR CAREER ?
+          </h2>
+            <ul>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">a.ELECTICIAN</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="b" id="a_text">b.MECHENICAL</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">c. BUSSINESS MAN</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">d.SCIENTIST</label>
+            </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+  
+  
+        <div>
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+            <h2 id="question">8.ARE THERE ANY SPECIFIC UNIVERSITIES OR COLLEGES THAT YOU ARE INTRESTED IN SPECIAL COURSE ?</h2>
+            <ul>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">a.AI</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="b" id="a_text">b.DATA SCIENCE</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">c.FORENSIC LAB</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">d.CRIMINAL INVESTIGATION </label>
+            </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+  
+  
+        <div>
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+            <h2 id="question">9.DO YOU HAVE ANY SPECIAL SKILL OR TALENT THAT YOU WOULD LIKE TO DEVELOPED THAT WITH YOUE CAREER STUDIES?</h2>
+            <ul>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">a. PLAYING SPORTS</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="b" id="a_text">b.KNOWLEDGE OF INTERNET </label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">c.DIGITAL NETWORKING</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">d.PHYSICAL</label>
+            </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+  
+  
+        <div>
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+            <h2 id="question">10.  IF YOU ARE GOOD IN HANDLING PEOPLE YOU CAN TAKES?</h2>
+            <ul>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">a.HOTAL MANAGEMENT</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="b" id="a_text">b.INDUSTRIAL DATA MANAGE</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">c.STUDY MANAGEMENTS</label>
+            </li>
+            <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">d.TECHNICAL MANAGER </label>
+            </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+
+      </section>
+  </body>
+</html>
