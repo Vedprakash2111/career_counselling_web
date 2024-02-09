@@ -1,3 +1,12 @@
+html {
+  font-size: 15px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 
 body::-webkit-scrollbar{
   display: none;
@@ -9,44 +18,255 @@ body {
     background-position: center;
     background-size:auto;
     background-attachment: fixed;
-    font-family: sans-serif;
-    line-height: 2.2rem;
-    
   }
 
 
-  section{
+  .section{
+    font-family: sans-serif;
+    line-height: 2.2rem;
     padding-top: 85px;
   }
 
+  .part{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gif img{
+    height: 700px;
+  }
   
   .content{
-    width: 1200px;
     height: auto;
     margin: auto;
     color: #fff;
-    left: 0;
-    top: 0;
     padding: 3px 12px;
     margin: 0;
 }
 
 .content .par{
-    padding-left: 20px;
-    padding-bottom: 90px;
+    padding-left: 50px;
     padding-top: 60px;
     letter-spacing: 1.2px;
     line-height: 30px;
 }
 
+.text{
+  padding-top: 50px;
+}
 .content h1{
+    padding-top: 40px;
+    padding-left: 50px;
     font-size: 50px;
-    padding-left: 20px;
     margin-top: 4%;
+    
     letter-spacing: 3px;
 }
-
 .content span{
+    padding-right: 10px;
+}
+.span1{
     color: darkslategray;
     font-size: 65px
 }
+
+
+/*-----------------------*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(0, 5%, 11%);
+  --dark-blue: hsl(0, 0%, 97%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --medium-grey: hsl(180, 3%, 93%);
+  --orange:darkslategray;
+  --container-bg: #1f2630;
+  --body-font: "Overpass", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.back-section {
+  display: none;
+}
+
+.front-section {
+  width: 42%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.95rem;
+  padding: 2rem 1.95rem;
+  height: 40%;
+  padding-bottom: 4rem;
+}
+
+.star-img {
+  position: relative;
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  padding: 1rem;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 100%;
+  height: auto;
+  max-width: 1.2rem;
+}
+
+.front-section h1 {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.front-section p {
+  color: white;
+  line-height: 1.5rem;
+}
+
+.rating-numbers {
+  display: flex;
+  flex-direction: row;
+  gap: 1.4rem;
+}
+
+/* RADIO BUTTON */
+.radio-btn {
+  display: none;
+}
+
+.rating-number {
+  cursor: pointer;
+  color: var(--light-grey);
+  border-radius: 50%;
+  padding: 1.1rem;
+  background-color: var(--dark-blue);
+  width: 1.1rem;
+  height: 1.1rem;
+  text-align: center;
+  
+  border: 1px solid transparent;
+}
+.rating-number.default-active {
+  background-color: rgb(149, 158, 172);
+  color: var(--white);
+}
+
+.was-selected {
+  background-color: var(--orange);
+  color: var(--white);
+}
+/**********  SUBMIT BTN **********/
+.btn {
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  width: 97%;
+  padding: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+}
+
+/********** BACK ACTIVE **********/
+.front-section.hide-card {
+  display: none;
+}
+
+.back-section.show-card {
+  display: inline-block;
+  width: 42%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 1.6rem 1.95rem;
+  height: 42%;
+  padding-bottom: 3.3rem;
+  font-family: var(--body-font);
+}
+
+.back-section-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.6rem;
+}
+
+.result-text {
+  color: var(--orange);
+  background-color: var(--dark-blue);
+  border-radius: 25px;
+  padding: 0.4rem 0.6rem;
+  width: 50%;
+  text-align: center;
+}
+
+.thankyou-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--white);
+}
+.thankyou-section h1 {
+  font-weight: 400;
+  font-size: 1.9rem;
+}
+
+.thankyou-section p {
+  color: var(--medium-grey);
+}
+
+/** Transitions **/
+.rating-number.default-active,
+.rating-number.default-active:hover,
+.rating-number:hover,
+.btn,
+.btn:hover {
+  transition: all ease-in-out 0.3s;
+}
+@media (hover: hover) {
+  .rating-number.default-active:hover,
+  .rating-number:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+  .btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+  }
+}
+
+@media screen and (max-width: 777px) {
+  .front-section,
+  .back-section.show-card {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .front-section,
+  .back-section.show-card {
+    width: 70%;
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .front-section,
+  .back-section.show-card {
+    width: 80%;
+  }
+}
+
+
